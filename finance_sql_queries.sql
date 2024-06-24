@@ -66,33 +66,40 @@ select distinct loan_status
 from financial_loan
 
 
--- 4. Total funded loan amount
+-- 4. Total loan applications based on loan_status
+
+select loan_status, COUNT(*) total_applications
+from financial_loan
+group by loan_status
+
+
+-- 5. Total funded loan amount
 
 select concat((sum(loan_amount) / 1000000), ' millions') total_funded_loan_amount
 from financial_loan
 
 
--- 5. Total payment received
+-- 6. Total payment received
 
 select  sum(total_payment) total_payment_received
 from financial_loan
 
 
--- 6. Average interest rate based on purpose
+-- 7. Average interest rate based on purpose
 
 select purpose, round(AVG(int_rate),2) * 100 avg_int_rate
 from financial_loan
 group by purpose
 
 
--- 7. Average DTI based on purpose
+-- 8. Average DTI based on purpose
 
 select purpose, round(AVG(dti),2) * 100 avg_dti
 from financial_loan
 group by purpose
 
 
--- 8. Average DTI group by month
+-- 9. Average DTI group by month
 
 select month(issue_date) month, DATENAME(m,issue_date) month_name, ROUND(avg(dti),2) * 100 avg_dti
 from financial_loan
@@ -153,7 +160,7 @@ from financial_loan
 
 select concat(round(SUM(total_payment / 1000000),2), ' millions') total_amount_received
 from financial_loan
-
+where loan_status = 'charged off'
 
 -- 7. Month over month total amount recieved
 
