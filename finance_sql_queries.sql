@@ -21,7 +21,7 @@ having COUNT(id) > 1
 
 SELECT COLUMN_NAME
 FROM information_schema.columns
-WHERE table_name = 'financial_loan' and COLUMN_NAME is null
+WHERE table_name = 'financial_loan' and IS_NULLABLE = 'yes'
 	
 	-- emp_title column contains null values
 
