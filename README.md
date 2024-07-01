@@ -4,6 +4,7 @@
 
 
 ✤ **Objective**
+<br></br>
 The main goal of this project is to effectively monitor the bank's loan activities. The report will aim to provide the comprehensive insights of loan related activities, helping to make certain decisions and strategic planning.
 
 ✤ **Project Description**
