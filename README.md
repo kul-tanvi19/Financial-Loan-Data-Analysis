@@ -29,4 +29,7 @@
   5. Average DTI
   6. Overall good loan applications
   7. Overall bad loan applications
-     
+
+## ✤ Dashboard
+![image](https://github.com/kul-tanvi19/Financial-Loan-Data-Analysis/assets/172184420/ffdf9c5d-dd25-4085-9489-7a471fe4548d)
+
