@@ -1,6 +1,6 @@
 # Financial-Loan-Data-Analysis
 
-![loan](https://github.com/kul-tanvi19/Financial-Loan-Data-Analysis/assets/172184420/701ad371-5fbe-4e62-bcfc-cf3e717eb19b)
+  ![loan](https://github.com/kul-tanvi19/Financial-Loan-Data-Analysis/assets/172184420/701ad371-5fbe-4e62-bcfc-cf3e717eb19b)
 
 
 
